@@ -1,37 +1,70 @@
 import React, { Component } from 'react'
-import ListElement from './ListElement'
-import axios from 'axios'
+import History from './History'
+import DetailL from './DetailL'
+import DetailR from './DetailR'
+import Partners from './Partners'
+import Footer from './Footer'
 
 export default class Detail extends Component {
-    constructor() {
-        super();
-        this.state = {
-            users: [],
-            loading: true
-        }
-    }
-
-    componentDidMount() {
-        this.getUsers();
-    }
-
-    getUsers() {
-        axios.get('https://127.0.0.1:8000/api/test').then(users => {
-            this.setState({users: users.data, loading: false});
-        });
-    }
-
     render() {
-        const list = [];
+        const histories = [
+            {
+                classe:"",
+                link:"/",
+                name:"Accueil",
+                hide:""
+            },
+            {
+                classe:"active",
+                link:"#",
+                name:"Fire monitoring",
+                hide:"hidden"
+            }
+        ];
 
-        for (let i = 0; i < this.state.users.length; i++) {
-            list.push(<ListElement key={i} name={this.state.users[i].name} description={this.state.users[i].description} />);
+        const prepApps = [
+            {
+                title: "Fire monitoring",
+                name: "Eto no anaran'ilay apps kely",
+                description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit modi nisi praesentium assumenda quis architecto fugit temporibus voluptas quia ipsa qui animi tempora similique impedit accusantium reiciendis, quisquam voluptate eum!",
+                link: "/map",
+                img: "https://servir.adpc.net/sites/default/files/public/styles/tool_teaser_thumbnail/public/tools/images/Eco_Dash.jpg?itok=qbbKIT5v"
+            },
+            {
+                name: "Eto no anaran'ilay apps kely 2",
+                description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit modi nisi praesentium assumenda quis architecto fugit temporibus voluptas quia ipsa qui animi tempora similique impedit accusantium reiciendis, quisquam voluptate eum!",
+                link: "/map",
+                img: "https://servir.adpc.net/sites/default/files/public/styles/tool_teaser_thumbnail/public/tools/images/Eco_Dash.jpg?itok=qbbKIT5v"
+            },
+            {
+                name: "Eto no anaran'ilay apps kely 3",
+                description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit modi nisi praesentium assumenda quis architecto fugit temporibus voluptas quia ipsa qui animi tempora similique impedit accusantium reiciendis, quisquam voluptate eum!",
+                link: "/map",
+                img: "https://servir.adpc.net/sites/default/files/public/styles/tool_teaser_thumbnail/public/tools/images/Eco_Dash.jpg?itok=qbbKIT5v"
+            }
+        ];
+
+        const apps = [];
+        for (let index = 0; index < prepApps.length; index++) {
+            apps.push(
+                index%2==0 ? <DetailL key={index} title={prepApps[index].title} name={prepApps[index].name} description={prepApps[index].description} link={prepApps[index].link} img={prepApps[index].img} /> : <DetailR key={index} name={prepApps[index].name} description={prepApps[index].description} link={prepApps[index].link} img={prepApps[index].img} />
+            );
         }
 
         return (
             <div>
-                Detail page.s
-                {list}
+                <History link={histories} title="Description de l'outil" />
+                <div className="content titled-content">
+                    {apps}
+                    <section className="section-bg">
+                        <div className="section-bg-opacity">
+                            <div className="container white-bg disposition shadow">
+                                <Partners />
+                            </div>
+                        </div>
+                    </section>
+                    <Footer />
+                </div>
             </div>
         )
     }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from "react-router-dom"
+import logo from '../img/llanddev.png'
 
 function Header(props) {
     return (
         <div className="navigation">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg nav-llanddev bg-llanddev">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
-                        ILANDDEV
+                        <img src={logo} alt="llanddev"/>
                     </Link>
                     <button 
                         className="navbar-toggler" 
@@ -23,20 +24,31 @@ function Header(props) {
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav nav-right">
                             <li className="nav-item active">
-                                <Link className="navbar-brand" to="/">Accueil
+                                <Link className="nav-link" to="/">Accueil
                                     <span className="sr-only">(current)</span>
                                 </Link>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Services</a>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/map">Carte</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/detail">A propos</Link>
+                                <Link className="nav-link" to="/tableauDeBord">Tableau de bord</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/sujets">Sujet</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/about">A propos</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/detail">Nous contacter</Link>
                             </li>
                         </ul>
+                        <select className="llanddev-header-right">
+                            <option value="FR">FR</option>
+                            <option value="FR">EN</option>
+                            <option value="FR">MG</option>
+                        </select>
                     </div>
                 </div>
             </nav>
