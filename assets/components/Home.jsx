@@ -42,7 +42,7 @@ export default class Home extends Component {
                             <Partners />
                         </div>
                     </section>
-                    <Footer />
+                    <Footer onClick={this.props.onClick} />
                 </div>
             </div>
         )

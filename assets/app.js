@@ -10,22 +10,9 @@ import './styles/app.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header, Home, Detail, Carte, EnCours, Sujets, About } from './components'
+import Main from './Main'
 
 ReactDOM.render (
-    <Router>
-        <Header />
-        <div className="">
-            <Switch>
-                <Route path="/" exact component={() => <Home />} />
-                <Route path="/tableauDeBord" exact component={() => <EnCours />} />
-                <Route path="/sujets" exact component={() => <Sujets />} />
-                <Route path="/detail" exact component={() => <Detail />} />
-                <Route path="/map" exact component={() => <Carte />} />
-                <Route path="/about" exact component={() => <About />} />
-            </Switch>
-        </div>
-    </Router>
+    <Main />
     , document.getElementById('root')
 );

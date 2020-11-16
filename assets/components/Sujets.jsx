@@ -95,7 +95,7 @@ class Sujets extends Component {
                             </div>
                         </div>
                     </section>
-                    <Footer />
+                    <Footer onClick={this.props.onClick} />
                 </div>
             </div>
         )

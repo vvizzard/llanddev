@@ -48,7 +48,7 @@ export default function About(props) {
                         </div>
                     </div>
                 </section>
-                <Footer />
+                <Footer onClick={props.onClick} />
             </div>
         </div>
     )

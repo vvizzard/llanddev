@@ -320,4 +320,9 @@ footer a {
 .lang-a {
     display: inline;
     margin: 5px;
+    padding: 0px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: monospace;
 }

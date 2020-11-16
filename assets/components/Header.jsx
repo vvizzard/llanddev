@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from "react-router-dom"
 import logo from '../img/llanddev.png'
+import { FormattedMessage } from "react-intl"
 
 function Header(props) {
+
     return (
         <div className="navigation">
             <nav className="navbar navbar-expand-lg nav-llanddev bg-llanddev">
@@ -24,30 +26,58 @@ function Header(props) {
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav nav-right">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/">Accueil
-                                    <span className="sr-only">(current)</span>
+                                <Link className="nav-link" to="/">
+                                    <FormattedMessage
+                                        id="header_home"
+                                        defaultMessage="Accueil"
+                                    />
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/map">Carte</Link>
+                                <Link className="nav-link" to="/map">
+                                    <FormattedMessage
+                                        id="header_map"
+                                        defaultMessage="Carte"
+                                    />
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/tableauDeBord">Tableau de bord</Link>
+                                <Link className="nav-link" to="/tableauDeBord">
+                                    <FormattedMessage
+                                        id="header_dashboard"
+                                        defaultMessage="Tableau de bord"
+                                    />
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/sujets">Sujet</Link>
+                                <Link className="nav-link" to="/sujets">
+                                    <FormattedMessage
+                                        id="header_subjects"
+                                        defaultMessage="sujets"
+                                    />
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/about">A propos</Link>
+                                <Link className="nav-link" to="/about">
+                                    <FormattedMessage
+                                        id="header_about"
+                                        defaultMessage="A propos"
+                                    />
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/detail">Nous contacter</Link>
+                                <Link className="nav-link" to="/detail">
+                                    <FormattedMessage
+                                        id="header_contactUs"
+                                        defaultMessage="Nous contacter"
+                                    />
+                                </Link>
                             </li>
                         </ul>
-                        <select className="llanddev-header-right">
-                            <option value="FR">FR</option>
-                            <option value="FR">EN</option>
-                            <option value="FR">MG</option>
+                        <select className="llanddev-header-right" onChange={props.onChange} value={props.selected}>
+                            <option value="mg">MG</option>
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
                         </select>
                     </div>
                 </div>

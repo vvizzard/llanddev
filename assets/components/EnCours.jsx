@@ -5,6 +5,7 @@ import Partners from './Partners'
 import Footer from './Footer'
 
 export default class EnCours extends Component {
+
     render() {
         const histories = [
             {
@@ -46,7 +47,7 @@ export default class EnCours extends Component {
                             </div>
                         </div>
                     </section>
-                    <Footer />
+                    <Footer onClick={this.props.onClick} />
                 </div>
             </div>
         )

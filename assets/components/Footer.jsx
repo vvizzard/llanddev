@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Link, withRouter } from "react-router-dom"
+import { FormattedMessage } from "react-intl"
 
 function Footer(props) {
+
     return (
         <footer className="footer">
             <div className="container disposition shadow">
@@ -12,16 +14,36 @@ function Footer(props) {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <span>Liens</span>
-                        <a>Nous contacter</a>
-                        <a>A propos</a>
+                        <span>
+                            <FormattedMessage
+                                id="footer_links"
+                                defaultMessage="Liens"
+                            />
+                        </span>
+                        <a>
+                            <FormattedMessage
+                                id="header_contactUs"
+                                defaultMessage="Carte"
+                            />
+                        </a>
+                        <a>
+                            <FormattedMessage
+                                id="header_about"
+                                defaultMessage="A propos"
+                            />
+                        </a>
                     </div>
                     <div className="col-md-4">
-                        <span>Langues</span>
+                        <span>
+                            <FormattedMessage
+                                id="footer_language"
+                                defaultMessage="Langues"
+                            />
+                        </span>
                         <br/>
-                        <a className="lang-a">Malagasy</a>
-                        <a className="lang-a">Français</a>
-                        <a className="lang-a">English</a>
+                        <button onClick={props.onClick} className="lang-a" value="mg">Malagasy</button>
+                        <button onClick={props.onClick} className="lang-a" value="fr">Français</button>
+                        <button onClick={props.onClick} className="lang-a" value="en">English</button>
                     </div>
                 </div>
             </div>
