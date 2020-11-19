@@ -1,7 +1,8 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header, Home, Detail, Carte, EnCours, Sujets, About } from './components'
+import { Header, Home, Detail, Carte, EnCours, Sujets, About, CookiesConditions } from './components'
 import { IntlProvider } from "react-intl";
+import CookieConsent from "react-cookie-consent";
 
 import en from "./translation/en.json"
 import fr from "./translation/fr.json"
@@ -15,7 +16,8 @@ class Main extends Component {
         this.state = {
             locale: "fr",
             langue: "fr",
-            langueSelected: "fr"
+            langueSelected: "fr",
+            conditionUtilisationPopup: false
         };
 
         this.setUpInternationalization();
@@ -58,12 +60,25 @@ class Main extends Component {
         });
     }
 
+    closeModal() {
+        this.setState({
+            conditionUtilisationPopup : false
+        });
+    }
+
+    componentDidMount() {
+        this.setState({
+            conditionUtilisationPopup : true
+        });
+    }
+
     render() {
 
         const histories = [];
 
         return (
             <IntlProvider locale={this.state.locale} messages={this.state.langue}>
+                <CookiesConditions closePopup={() => this.closeModal()} open={this.state.conditionUtilisationPopup} />
                 <Router>
                     <Header onChange = {() => this.handleChange(event)} selected = {this.state.langueSelected} />
                     <div className="">
@@ -77,6 +92,17 @@ class Main extends Component {
                         </Switch>
                     </div>
                 </Router>
+                <CookieConsent
+                    location="bottom"
+                    buttonText="OK"
+                    cookieName="cookieValide"
+                    style={{ background: "#2B373B" }}
+                    buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+                    expires={150}
+                >
+                    Ce site web utilise googles analytics ainsi que certains cookies pour vous offrire la meilleur expérience de navigation possible.
+                    {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
+                </CookieConsent>
             </IntlProvider>
         )
     }

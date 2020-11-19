@@ -5,3 +5,4 @@ export { default as Carte } from "./Carte";
 export { default as EnCours } from "./EnCours";
 export { default as Sujets } from "./Sujets";
 export { default as About } from "./About";
+export { default as CookiesConditions } from "./CookiesConditions";

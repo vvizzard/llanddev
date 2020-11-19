@@ -77,6 +77,47 @@
     display: none!important;
 }
 
+.popup-overlay {
+    background-color: #000000d1;
+}
+
+.modal {
+    display: block;
+    position: unset;
+    margin: auto;
+    width: 75%;
+    max-width: 1024px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 5px; */
+}
+
+.modal .header, .modal .content {
+    padding: .75rem;
+}
+
+.modal .header {
+    border-bottom: solid 1px white;
+    background: #3e1d02;
+    color: white;
+}
+
+.modal .content {
+    margin-top: unset;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+.modal .footer {
+    padding: .75rem;
+    border-top: solid 1px #3e1d02;
+    text-align: right;
+}
+
+.modal .footer .btn {
+    margin: 2px;
+}
+
 .home-banniere {
     height: 75vh;
     overflow-y: hidden;
