@@ -4,7 +4,7 @@ import History from './History'
 import Partners from './Partners'
 import Footer from './Footer'
 
-export default function About(props) {
+export default function Land(props) {
 
     const histories = [
         {
@@ -16,14 +16,14 @@ export default function About(props) {
         {
             classe:"active",
             link:"#",
-            name:"history_about",
+            name:"header_contactUs",
             hide:"hidden"
         }
     ];
 
     return (
         <div>
-            <History link={histories} title="A propos" />
+            <History link={histories} title="Contact" />
             <div className="content titled-content">
                 <section className="about">
                     <div className="container white-bg disposition shadow">
@@ -34,10 +34,6 @@ export default function About(props) {
                         <h1>Historique</h1>
                         <div className="sujets-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias sapiente non dolore autem repellendus aliquam vitae eligendi, eveniet, minima harum ratione deserunt molestiae? Eum quae ipsam dolores minus numquam aliquam, praesentium quaerat sit placeat laudantium impedit dicta non hic natus ex enim obcaecati quas ut dolorum nulla molestiae corrupti dignissimos. Dolores maxime dolorem vero saepe a inventore dignissimos ab facere molestias harum, sit esse neque eveniet nemo qui excepturi placeat blanditiis numquam corporis nam quibusdam quos! Quia dignissimos, hic officia in, reiciendis nulla qui, excepturi sapiente rerum distinctio voluptate eius! Pariatur, fuga. Ipsam ipsum quasi, nulla necessitatibus, sit nobis vitae voluptatem similique quod, aut officia excepturi maxime et suscipit deleniti optio consequatur atque ullam adipisci. Soluta optio sapiente tenetur laudantium eaque magnam cum, rerum atque totam numquam voluptatem excepturi deserunt inventore pariatur laboriosam. Doloremque quisquam, ratione inventore rerum nesciunt necessitatibus. Dignissimos facilis consequuntur voluptates. Incidunt, aperiam fugiat alias corporis quidem hic porro molestiae odio animi beatae id! Iure beatae voluptate repudiandae tempore quibusdam voluptatem ad, rerum quae nulla? Assumenda, nemo. Iste voluptate eligendi esse quis tempore explicabo quas? Laboriosam exercitationem repellendus aspernatur, animi laudantium repellat doloremque, voluptatibus quo distinctio, ut veniam corporis reiciendis hic! Eum quia earum aut? Dolor atque ducimus, sint ut quibusdam vero tenetur sunt ipsum quasi laborum aperiam obcaecati cumque qui fuga dignissimos excepturi magni reiciendis fugit veritatis ex veniam aliquid. Officia consequatur, voluptate, excepturi nisi pariatur accusantium hic mollitia corrupti, iusto consequuntur provident? Non ipsa praesentium veritatis hic, sapiente quibusdam odio porro nesciunt expedita quo temporibus accusamus quod aspernatur provident ab obcaecati nemo voluptates placeat, vel minima reiciendis vero eligendi nihil. Dignissimos est voluptatum nisi facilis optio? Autem, suscipit blanditiis voluptas tenetur, beatae sit perspiciatis labore ipsam qui reiciendis cumque provident, laudantium nostrum ex! Earum iste odit expedita dolores autem necessitatibus possimus sunt excepturi ullam accusamus eius, veniam exercitationem sequi modi nobis quas sint magni commodi architecto consequatur repudiandae pariatur? Culpa aliquam error quis sint maxime voluptates dicta ut, iusto amet ratione aut, ipsa laudantium dolores cumque eligendi non officia. Assumenda ipsum tempora rem, corrupti corporis dicta possimus expedita voluptas mollitia explicabo magni necessitatibus error eaque fuga ducimus tenetur architecto? Tempora perferendis adipisci dicta cum odit, vitae accusantium, ut fugit accusamus amet eos? Corrupti eveniet officiis animi fuga, blanditiis temporibus quas. Assumenda exercitationem nihil maxime minima aliquid consectetur voluptatibus, qui pariatur optio natus eveniet atque nemo corporis. Voluptate fugiat temporibus consequuntur adipisci deleniti iste explicabo sequi quas veniam, obcaecati eum possimus dolores? Adipisci neque libero facere. Aspernatur reprehenderit unde perferendis, maiores assumenda quas accusamus consequatur quisquam mollitia non harum odio optio placeat sed repudiandae culpa ipsam obcaecati? Similique quia quidem perferendis, autem ullam molestiae numquam. Dolor culpa a officia tenetur. Laudantium libero ad reprehenderit distinctio?
-                        </div>
-                        <h1>Défis</h1>
-                        <div className="sujets-description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis distinctio atque perferendis unde maxime ipsam minus magni expedita minima. Perspiciatis culpa saepe aut iste praesentium ea non molestiae pariatur molestias?
                         </div>
                     </div>
                 </section>

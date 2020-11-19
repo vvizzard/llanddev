@@ -7,5 +7,18 @@
     "header_contactUs" : "Raha ifandray",
 
     "footer_links" : "Rohy",
-    "footer_language" : "Fiteny"
+    "footer_language" : "Fiteny",
+
+    "history_home" : "Fandraisana",
+    "history_about" : "Ny momba anay",
+    "history_dashboard" : "Tableau de bord",
+    "history_subject" : "Laza",
+    "history_map" : "Sarin-tany",
+    "history_land" : "Tany",
+    "history_landscape" : "Paysage",
+    "history_dev" : "Développement",
+
+    "home_subject" : "Laza",
+    "home_material" : "Fitaovana",
+    "home_partener" : "Mpiaramiasa"
 }

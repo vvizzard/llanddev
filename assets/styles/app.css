@@ -139,7 +139,7 @@
 }
 
 .content {
-    margin-top: -8rem;
+    margin-top: -14rem;
 }
 
 .titled-content {
@@ -181,11 +181,15 @@
 .service-content-fond {
     height: 100%;
     width: 94%;
-    background-color: #9e54172e;
+    /* background-color: #9e54172e; */
     position: absolute;
     top: 0;
     overflow: hidden;
     text-align: center;
+}
+
+.service-content-fond:hover {
+    background-color: #9e54172e;
 }
 
 .service-content-fond a:hover {
@@ -193,7 +197,8 @@
 }
 
 .service-content-description {
-    background-color: #76923be6;
+    /* background-color: #76923be6; */
+    background-color: black;
     height: 4rem;
     padding: .5rem;
 }
@@ -201,7 +206,7 @@
 .translucide {
     height: 100%;
     width: 100%;
-    opacity: .2;
+    /* opacity: .2; */
     padding-top: 12rem;
 }
 

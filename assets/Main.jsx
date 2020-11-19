@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header, Home, Detail, Carte, EnCours, Sujets, About, CookiesConditions } from './components'
+import { Header, Home, Detail, Carte, EnCours, Sujets, Land, Landscape, Dev, About, Contact, CookiesConditions } from './components'
 import { IntlProvider } from "react-intl";
 import CookieConsent from "react-cookie-consent";
 
@@ -83,12 +83,16 @@ class Main extends Component {
                     <Header onChange = {() => this.handleChange(event)} selected = {this.state.langueSelected} />
                     <div className="">
                         <Switch>
-                            <Route path="/" exact component={() => <Home onClick = {() => this.handleClick(event)} />} />
+                            <Route path="/" exact component={() => <Home lgSelected = {this.state.langueSelected} onClick = {() => this.handleClick(event)} />} />
                             <Route path="/tableauDeBord" exact component={() => <EnCours onClick = {() => this.handleClick(event)} />} />
                             <Route path="/sujets" exact component={() => <Sujets onClick = {() => this.handleClick(event)} />} />
+                            <Route path="/land" exact component={() => <Land onClick = {() => this.handleClick(event)} />} />
+                            <Route path="/landscape" exact component={() => <Landscape onClick = {() => this.handleClick(event)} />} />
+                            <Route path="/dev" exact component={() => <Dev onClick = {() => this.handleClick(event)} />} />
                             <Route path="/detail" exact component={() => <Detail onClick = {() => this.handleClick(event)} />} />
                             <Route path="/map" exact component={() => <Carte />} />
                             <Route path="/about" exact component={() => <About onClick = {() => this.handleClick(event)} />} />
+                            <Route path="/contact" exact component={() => <Contact onClick = {() => this.handleClick(event)} />} />
                         </Switch>
                     </div>
                 </Router>

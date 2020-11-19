@@ -7,5 +7,18 @@
     "header_contactUs" : "Nous contacter",
 
     "footer_links" : "Liens",
-    "footer_language" : "Langues"
+    "footer_language" : "Langues",
+
+    "history_home" : "Accueil",
+    "history_about" : "A propos",
+    "history_dashboard" : "Tableau de bord",
+    "history_subject" : "Sujet",
+    "history_map" : "Carte",
+    "history_land" : "Terre",
+    "history_landscape" : "Paysage",
+    "history_dev" : "Développement",
+
+    "home_subject" : "Sujets",
+    "home_material" : "Matériels",
+    "home_partener" : "Partenaires"
 }

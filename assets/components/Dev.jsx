@@ -4,7 +4,21 @@ import History from './History'
 import Partners from './Partners'
 import Footer from './Footer'
 
-export default function About(props) {
+export default function Dev(props) {
+
+    // const en = {
+    //     land : "Land",
+    //     home : "Home"
+    // }
+    // const fr = {
+    //     land : "Terre",
+    //     home : "Accueil"
+    // }
+    // const mg = {
+    //     land : "Tany",
+    //     home : "Fandraisana"
+    // }
+    // const message = {en, fr, mg};
 
     const histories = [
         {
@@ -16,14 +30,14 @@ export default function About(props) {
         {
             classe:"active",
             link:"#",
-            name:"history_about",
+            name:"history_dev",
             hide:"hidden"
         }
     ];
 
     return (
         <div>
-            <History link={histories} title="A propos" />
+            <History link={histories} title="Development" />
             <div className="content titled-content">
                 <section className="about">
                     <div className="container white-bg disposition shadow">

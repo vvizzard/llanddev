@@ -11,13 +11,13 @@ export default class EnCours extends Component {
             {
                 classe:"",
                 link:"/",
-                name:"Accueil",
+                name:"history_home",
                 hide:""
             },
             {
                 classe:"active",
                 link:"#",
-                name:"Tableau de bord",
+                name:"history_dashboard",
                 hide:"hidden"
             }
         ];

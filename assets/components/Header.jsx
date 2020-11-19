@@ -66,7 +66,7 @@ function Header(props) {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/detail">
+                                <Link className="nav-link" to="/contact">
                                     <FormattedMessage
                                         id="header_contactUs"
                                         defaultMessage="Nous contacter"

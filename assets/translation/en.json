@@ -7,5 +7,18 @@
     "header_contactUs" : "Contact us",
 
     "footer_links" : "Links",
-    "footer_language" : "Languages"
+    "footer_language" : "Languages",
+
+    "history_home" : "Home",
+    "history_about" : "About",
+    "history_dashboard" : "Dashboard",
+    "history_subject" : "Subject",
+    "history_map" : "Map",
+    "history_land" : "Land",
+    "history_landscape" : "Landscape",
+    "history_dev" : "Development",
+
+    "home_subject" : "Subjects",
+    "home_material" : "Materials",
+    "home_partener" : "Partners"
 }

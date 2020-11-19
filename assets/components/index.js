@@ -6,3 +6,7 @@ export { default as EnCours } from "./EnCours";
 export { default as Sujets } from "./Sujets";
 export { default as About } from "./About";
 export { default as CookiesConditions } from "./CookiesConditions";
+export { default as Land } from "./Land";
+export { default as Landscape } from "./Landscape";
+export { default as Dev } from "./Dev";
+export { default as Contact } from "./Contact";

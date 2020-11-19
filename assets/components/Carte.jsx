@@ -9,13 +9,13 @@ export default function Carte() {
     {
         classe:"",
         link:"/",
-        name:"Accueil",
+        name:"history_home",
         hide:""
     },
     {
         classe:"active",
         link:"#",
-        name:"Carte",
+        name:"history_map",
         hide:"hidden"
     }
   ];

@@ -20,18 +20,18 @@ function Footer(props) {
                                 defaultMessage="Liens"
                             />
                         </span>
-                        <a>
+                        <Link to="/contact">
                             <FormattedMessage
                                 id="header_contactUs"
-                                defaultMessage="Carte"
+                                defaultMessage="Nous contacter"
                             />
-                        </a>
-                        <a>
+                        </Link>
+                        <Link to="/about">
                             <FormattedMessage
                                 id="header_about"
                                 defaultMessage="A propos"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div className="col-md-4">
                         <span>
