@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Material | Admin{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg nav-llanddev bg-llanddev">
+        <div class="container">
+            <a class="navbar-brand" to="/">
+                <img src="{logo}" alt="llanddev"/>
+            </a>
+            <h1 style="color: white;"><small>Administrateur</small></h1>
+        </div>
+    </nav>
+    <section class="section-bg">
+        <div class="section-bg-opacity">
+            <div style="min-height: 100vh;" class="container white-bg disposition shadow">
+                <h1>Materiels</h1>
+                {{ form_widget(form) }}
+
+                <button type="submit" class="btn btn-success">Ajout</button>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
+{% endblock %}
